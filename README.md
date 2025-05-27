@@ -26,7 +26,7 @@ Loja virtual moderna e responsiva para produtos de tecnologia, desenvolvida com 
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/colaresyuri/site-nexus-tech.git
 
 ## 📄 Licença
 
