@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusTech - Tecnologia de Ponta</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased">
+    <!-- Navbar (barra de navegação) -->
+    <nav class="glass-nav fixed w-full z-50 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-gamepad text-2xl orange-gradient-text"></i>
+                <span class="text-xl font-bold orange-gradient-text">NexusTech</span>
+            </div>
+            
+            <!-- Links do menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-orange-400 transition">Home</a>
+                <a href="#products" class="text-gray-300 hover:text-orange-400 transition">Produtos</a>
+                <a href="#features" class="text-gray-300 hover:text-orange-400 transition">Destaques</a>
+                <a href="#about" class="text-gray-300 hover:text-orange-400 transition">Sobre</a>
+            </div>
+            
+            <!-- Botões do carrinho e menu mobile -->
+            <div class="flex items-center space-x-4">
+                <button id="cart-btn" class="relative">
+                    <i class="fas fa-shopping-cart text-xl text-gray-300 hover:text-orange-400 transition"></i>
+                    <span id="cart-count" class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+                </button>
+                <button class="md:hidden text-gray-300 hover:text-orange-400">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Seção principal (Hero Section) -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-card p-8 md:p-12 rounded-2xl overflow-hidden relative">
+                <!-- Efeitos de fundo decorativos -->
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500 rounded-full opacity-10 blur-3xl"></div>
+                <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-orange-500 rounded-full opacity-10 blur-3xl"></div>
+                
+                <div class="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Tecnologia <span class="orange-gradient-text">Nexus</span></h1>
+                        <p class="text-gray-300 mb-6 text-lg">Os melhores produtos de tecnologia com desempenho excepcional e design premium.</p>
+                        <div class="flex space-x-4">
+                            <button class="orange-gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition">Compre Agora</button>
+                            <button class="border border-orange-500 text-orange-400 px-6 py-3 rounded-lg font-medium hover:bg-orange-500 hover:bg-opacity-10 transition">Explorar</button>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Gaming Setup" class="w-full h-auto rounded-xl hover-scale">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Produtos em Destaque -->
+    <section id="products" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos <span class="orange-gradient-text">Produtos</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Descubra nossa seleção premium de produtos de tecnologia que combinam desempenho e estilo.</p>
+            </div>
+            
+            <!-- Grid de produtos -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Produto 1 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80" alt="PlayStation 5" class="w-full h-auto rounded-lg hover-scale">
+                        <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">NOVO</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">PlayStation 5</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(48 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold orange-gradient-text">R$ 4.499</span>
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition" data-id="1" data-name="PlayStation 5" data-price="4499" data-image="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="MacBook Pro" class="w-full h-auto rounded-lg hover-scale">
+                        <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">-15%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">MacBook Pro M2</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(72 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-400 line-through text-sm">R$ 12.999</span>
+                            <span class="text-2xl font-bold orange-gradient-text block">R$ 10.999</span>
+                        </div>
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition" data-id="2" data-name="MacBook Pro M2" data-price="10999" data-image="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="/img/APPLE IPHONE 14 PRO MAX 2023.jpeg" alt="iPhone 14 Pro" class="w-full h-auto rounded-lg hover-scale">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">iPhone 14 Pro</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(36 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold orange-gradient-text">R$ 7.999</span>
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition"
+                            data-id="3"
+                            data-name="iPhone 14 Pro"
+                            data-price="7999"
+                            data-image="/img/APPLE IPHONE 14 PRO MAX 2023.jpeg">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1142&q=80" alt="PC Gamer" class="w-full h-auto rounded-lg hover-scale">
+                        <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded pulse">OFERTA</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">PC Gamer RX 7900</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(64 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold orange-gradient-text">R$ 8.799</span>
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition" data-id="4" data-name="PC Gamer RX 7900" data-price="8799" data-image="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1142&q=80">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="/img/XBOX SERIES S.jpeg" alt="Xbox Series X" class="w-full h-auto rounded-lg hover-scale">
+                        <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">LANÇAMENTO</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Xbox Series X</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(52 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold orange-gradient-text">R$ 4.199</span>
+                        <!-- Corrija aqui: -->
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition"
+                            data-id="5"
+                            data-name="Xbox Series X"
+                            data-price="4199"
+                            data-image="/img/XBOX SERIES S.jpeg">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="/img/Celular Samsung Galaxy S23 Ultra 1TB Black.jpeg" alt="Samsung Galaxy S23 Ultra" class="w-full h-auto rounded-lg hover-scale">
+                        <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">-10%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Samsung S23 Ultra</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(68 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-400 line-through text-sm">R$ 8.999</span>
+                            <span class="text-2xl font-bold orange-gradient-text block">R$ 8.099</span>
+                        </div>
+                        <!-- Corrija aqui: -->
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition"
+                            data-id="6"
+                            data-name="Samsung S23 Ultra"
+                            data-price="8099"
+                            data-image="/img/Celular Samsung Galaxy S23 Ultra 1TB Black.jpeg">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 7 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="/img/Nintendo Switch OLED - White - Refurbished A+ Pristine - The iOutlet.jpeg" alt="Nintendo Switch OLED" class="w-full h-auto rounded-lg hover-scale">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Nintendo Switch OLED</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(42 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold orange-gradient-text">R$ 2.799</span>
+                        <!-- Corrija aqui: -->
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition"
+                            data-id="7"
+                            data-name="Nintendo Switch OLED"
+                            data-price="2799"
+                            data-image="/img/Nintendo Switch OLED - White - Refurbished A+ Pristine - The iOutlet.jpeg">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 8 -->
+                <div class="glass-card p-5 rounded-xl product-card transition-all duration-300">
+                    <div class="relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1142&q=80" alt="Monitor Gamer 240Hz" class="w-full h-auto rounded-lg hover-scale">
+                        <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">ESGOTANDO</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Monitor Gamer 240Hz</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm ml-2">(56 reviews)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold orange-gradient-text">R$ 3.299</span>
+                        <button class="add-to-cart bg-orange-500 hover:bg-orange-600 text-white p-2 rounded-full transition" data-id="8" data-name="Monitor Gamer 240Hz" data-price="3299" data-image="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1142&q=80">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botão para ver todos os produtos -->
+            <div class="text-center mt-12">
+                <button class="border border-orange-500 text-orange-400 px-6 py-3 rounded-lg font-medium hover:bg-orange-500 hover:bg-opacity-10 transition">
+                    Ver Todos os Produtos
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Destaques -->
+    <section id="features" class="py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Por que escolher a <span class="orange-gradient-text">NexusTech</span>?</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Oferecemos a melhor experiência de compra com produtos de qualidade e suporte excepcional.</p>
+            </div>
+            
+            <!-- Grid de destaques -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Destaque 1 -->
+                <div class="glass-card p-6 rounded-xl hover-scale">
+                    <div class="w-14 h-14 orange-gradient-bg rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Garantia Extendida</h3>
+                    <p class="text-gray-300">Todos os nossos produtos vêm com garantia estendida de 2 anos para sua tranquilidade.</p>
+                </div>
+                
+                <!-- Destaque 2 -->
+                <div class="glass-card p-6 rounded-xl hover-scale">
+                    <div class="w-14 h-14 orange-gradient-bg rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-truck text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Entrega Rápida</h3>
+                    <p class="text-gray-300">Entregamos em todo o Brasil em até 3 dias úteis para produtos em estoque.</p>
+                </div>
+                
+                <!-- Destaque 3 -->
+                <div class="glass-card p-6 rounded-xl hover-scale">
+                    <div class="w-14 h-14 orange-gradient-bg rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Suporte 24/7</h3>
+                    <p class="text-gray-300">Nossa equipe de suporte está disponível 24 horas por dia, 7 dias por semana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção Sobre -->
+    <section id="about" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-card p-8 md:p-12 rounded-2xl overflow-hidden relative">
+                <!-- Efeito decorativo -->
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500 rounded-full opacity-10 blur-3xl"></div>
+                
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Sobre a <span class="orange-gradient-text">NexusTech</span></h2>
+                        <p class="text-gray-300 mb-4">Fundada em 2015, a NexusTech rapidamente se tornou uma referência no mercado de tecnologia, oferecendo os produtos mais inovadores com o melhor custo-benefício.</p>
+                        <p class="text-gray-300 mb-6">Nossa missão é democratizar o acesso à tecnologia de ponta, proporcionando experiências excepcionais para nossos clientes.</p>
+                        
+                        <!-- Métricas da empresa -->
+                        <div class="flex space-x-4">
+                            <div class="text-center">
+                                <span class="text-4xl font-bold orange-gradient-text">50K+</span>
+                                <p class="text-gray-400">Clientes</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-4xl font-bold orange-gradient-text">4.9</span>
+                                <p class="text-gray-400">Avaliação</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-4xl font-bold orange-gradient-text">12</span>
+                                <p class="text-gray-400">Prêmios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Nessa Equipe" class="w-full h-auto rounded-xl hover-scale">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção Newsletter -->
+    <section class="py-16 px-6 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="max-w-4xl mx-auto glass-card p-8 rounded-2xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-2">Receba Ofertas Exclusivas</h2>
+            <p class="text-gray-300 mb-6">Assine nossa newsletter e seja o primeiro a saber sobre lançamentos e promoções.</p>
+            
+            <!-- Formulário de newsletter -->
+            <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input type="email" placeholder="Seu melhor e-mail" class="flex-grow px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white">
+                <button class="orange-gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition whitespace-nowrap">Assinar</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé (Footer) -->
+    <footer class="py-12 px-6 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Sobre a empresa -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gamepad text-2xl orange-gradient-text"></i>
+                        <span class="text-xl font-bold orange-gradient-text">NexusTech</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Tecnologia de ponta com desempenho excepcional.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Produtos -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Produtos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Video Games</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Smartphones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Notebooks</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">PC Gamer</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Acessórios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Suporte -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Suporte</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Central de Ajuda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Trocas e Devoluções</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400 transition">Status do Pedido</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-map-marker-alt text-orange-400 mt-1"></i>
+                            <span class="text-gray-400">Av. Paulista, 1000 - São Paulo, SP</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-orange-400"></i>
+                            <span class="text-gray-400">(11) 4002-8922</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-orange-400"></i>
+                            <span class="text-gray-400">contato@nexustech.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Direitos autorais -->
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-500">© 2023 NexusTech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal do Carrinho de Compras -->
+    <div id="cart-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+            </div>
+            
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            
+            <div class="inline-block align-bottom glass-card rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="px-6 py-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold">Seu Carrinho</h3>
+                        <button id="close-cart" class="text-gray-400 hover:text-orange-400">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Itens do carrinho serão inseridos aqui via JS -->
+                    <div id="cart-items" class="max-h-96 overflow-y-auto space-y-4">
+                        <!-- Mensagem de carrinho vazio -->
+                        <div class="text-center py-8 text-gray-400" id="empty-cart-message">
+                            <i class="fas fa-shopping-cart text-4xl mb-3"></i>
+                            <p>Seu carrinho está vazio</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Totais do carrinho -->
+                    <div class="border-t border-gray-700 mt-4 pt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">Subtotal</span>
+                            <span id="cart-subtotal" class="font-bold">R$ 0,00</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <span class="text-gray-300">Frete</span>
+                            <span class="font-bold">Grátis</span>
+                        </div>
+                        <div class="flex justify-between text-xl font-bold">
+                            <span>Total</span>
+                            <span id="cart-total" class="orange-gradient-text">R$ 0,00</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Botão de finalizar compra -->
+                    <div class="mt-6">
+                        <button id="checkout-btn" class="w-full orange-gradient-bg text-white py-3 rounded-lg font-medium hover:shadow-lg transition disabled:opacity-50" disabled>
+                            Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast de notificação -->
+    <div id="toast" class="fixed bottom-4 right-4 glass-card px-6 py-3 rounded-lg flex items-center space-x-3 transform translate-y-10 opacity-0 transition-all duration-300 z-50">
+        <div class="w-8 h-8 orange-gradient-bg rounded-full flex items-center justify-center">
+            <i class="fas fa-check text-white"></i>
+        </div>
+        <div>
+            <p id="toast-message" class="font-medium">Produto adicionado ao carrinho!</p>
+        </div>
+    </div>
+    <!-- Script JS principal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
