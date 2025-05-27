@@ -28,7 +28,8 @@ Loja virtual moderna e responsiva para produtos de tecnologia, desenvolvida com 
    ```sh
    git clone https://github.com/seu-usuario/seu-repositorio.git
 
-📄 Licença
+## 📄 Licença
+
 Este projeto é livre para fins de estudo e portfólio.
 
-Desenvolvido por Yuri Colares 🚀 ```
+Desenvolvido por Yuri Colares (@colaresyuri.dev)
