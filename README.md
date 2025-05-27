@@ -20,7 +20,7 @@ Loja virtual moderna e responsiva para produtos de tecnologia, desenvolvida com 
 
 ## 📸 Demonstração
 
-![Demonstração do site](https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1180&q=80)
+![Demonstração do site](./img/nexus-tech.gif.gif)
 
 ## 📂 Como usar
 
